@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.Controller">
+    <top>
+        <AnchorPane prefHeight="120.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" height="138.0" layoutX="1.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="368.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.9961685823754789">
+                                    <color>
+                                        <Color red="0.8274509906768799" green="0.8784313797950745" blue="0.9176470637321472" opacity="0.8899999856948853" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.8274509906768799" green="0.8784313797950745" blue="0.9176470637321472" opacity="0.8899999856948853" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Label fx:id="expression" layoutX="44.0" layoutY="27.0" prefHeight="40.0" prefWidth="253.0">
+                    <font>
+                        <Font name="JetBrains Mono Regular" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="result" layoutX="197.0" layoutY="72.0" prefHeight="40.0" prefWidth="128.0">
+                    <font>
+                        <Font name="JetBrains Mono Regular" size="18.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+    </top>
+    <center>
+        <HBox prefHeight="277.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="Hist">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="7">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="4">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="1">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                    </children></VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="DEL">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="8">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="5">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="2">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                    </children></VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="C">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="9">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="6">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="3">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                    </children></VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="ANS">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="(">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="*">
+                            <font>
+                                <Font name="Javanese Text" size="18.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="+">
+                            <font>
+                                <Font name="Javanese Text" size="18.0" />
+                            </font></Button>
+                    </children></VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="n!">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text=")">
+                            <font>
+                                <Font name="Javanese Text" size="16.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="/">
+                            <font>
+                                <Font name="Javanese Text" size="18.0" />
+                            </font></Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="87.0" prefWidth="50.0" style="-fx-border-color: #ffffff; -fx-background-color: #1687a7;" text="-">
+                            <font>
+                                <Font name="Javanese Text" size="18.0" />
+                            </font></Button>
+                    </children></VBox>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox prefHeight="67.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="88.0" prefWidth="72.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="- / +">
+                    <font>
+                        <Font name="Javanese Text" size="16.0" />
+                    </font></Button>
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="74.0" prefWidth="72.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text="0">
+                    <font>
+                        <Font name="Javanese Text" size="16.0" />
+                    </font></Button>
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="72.0" prefWidth="72.0" style="-fx-border-color: #ffffff; -fx-background-color: #d3e0ea;" text=".">
+                    <font>
+                        <Font name="Javanese Text" size="18.0" />
+                    </font></Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="67.0" prefWidth="144.0" style="-fx-border-color: #ffffff; -fx-background-color: #276678;" text="=">
+                    <font>
+                        <Font name="Javanese Text" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
